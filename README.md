@@ -3,7 +3,7 @@
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial we will be doing some configuration activities with network security groups and observing network traffic between Azure Virtual Machines, Using Wireshark, gaining intuition on how different protocals such as ICMP, SSH, DHCP, DNS, and RDP work and how to use them.
+In this tutorial we will be doing some configuration activities with network security groups and observing network traffic between Azure Virtual Machines using Wireshark, gaining intuition on how different protocals such as ICMP, SSH, DHCP, DNS, and RDP work and how to use them.
 
 
 
