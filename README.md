@@ -25,7 +25,7 @@ In this tutorial we will be doing some configuration activities with network sec
 
 <p>
 </p>
-<p> include with two Virtual Machines  Azure the first VM will be a windows 11 VM the other an ubuntu linux VM. Using Windows VM download Wireshark https://www.wireshark.org/download.html Once installed open Wireshark and filter for ICMP Traffic only ICMP is a network layer protocol that relays messages concerning network connection issues. Ping uses this protocol, ping tests connectivity between hosts. When we filter wirehsark to only capture ICMP packets and ping the private IP address of our linux machine we can visually see the packets on wireshark. 
+<p> To get this excercise started, first you will need to create a resource group and two Virtual Machines on Azure, a windows 11 VM and an ubuntu linux vm. Ensure that the vnet and resource group are the same for both with at least 2 vcpus each. Install windows app (microsoft remote desktop) and connect to the windows vm, now install Wireshark using windows-vm to start a packet capture. Now we will filter for ICMP Traffic, a protocal used by used by ping to the test connectivity between two devices. 
 </p>
 <br />
 <p>
