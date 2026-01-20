@@ -3,9 +3,9 @@
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+In this tutorial we will be doing some comfiguration activities with network security groups and observing network traffic between Azure Virtual Machines, Using Wireshark, gaining intuition on how different protocals such as ICMP, SSH, DHCP, DNS, and RDP work and how to use them.
 
-p
+
 
 
 <h2>Environments and Technologies Used</h2>
@@ -26,7 +26,7 @@ p
 <p>
 </p>
 <p>
-This is a tutorial on Network Security Groups and Inspecting Network Protocols first we will build the infastructure starting with two Virtual Machines on Azure the first VM will be a windows 11 VM the other an ubuntu linux VM. Using Windows VM download Wireshark https://www.wireshark.org/download.html Once installed open Wireshark and filter for ICMP Traffic only ICMP is a network layer protocol that relays messages concerning network connection issues. Ping uses this protocol, ping tests connectivity between hosts. When we filter wirehsark to only capture ICMP packets and ping the private IP address of our linux machine we can visually see the packets on wireshark. 
+Network Security Groups and Inspecting Network Protocols first we will build the infastructure starting with two Virtual Machines on Azure the first VM will be a windows 11 VM the other an ubuntu linux VM. Using Windows VM download Wireshark https://www.wireshark.org/download.html Once installed open Wireshark and filter for ICMP Traffic only ICMP is a network layer protocol that relays messages concerning network connection issues. Ping uses this protocol, ping tests connectivity between hosts. When we filter wirehsark to only capture ICMP packets and ping the private IP address of our linux machine we can visually see the packets on wireshark. 
 </p>
 <br />
 <p>
