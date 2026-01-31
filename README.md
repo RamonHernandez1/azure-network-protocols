@@ -18,7 +18,7 @@ In this tutorial we will be doing some configuration activities with network sec
 
 <h2>Operating Systems Used </h2>
 
-- Windows 11 
+- Windows 10 
 - Ubuntu Server 24.04
 
 <h2>Actions and Observations</h2>
