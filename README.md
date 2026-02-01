@@ -19,13 +19,13 @@ In this tutorial we will be doing some configuration activities with network sec
 <h2>Operating Systems Used </h2>
 
 - Windows 10 
-- Ubuntu Server 24.04
+- Ubuntu Server 
 
 <h2>Actions and Observations</h2>
 
 <p>
 </p>
-<p> To get this excercise started, first you will need to create a resource group and two Virtual Machines on Azure, a windows 11 VM and an ubuntu linux vm. Ensure that the vnet and resource group are the same for both with at least 2 vcpus each. Install windows app (microsoft remote desktop) and connect to the windows vm, now install Wireshark using windows-vm to start a packet capture. Now we will filter for ICMP Traffic, a protocal used by used by ping to the test connectivity between two devices. 
+<p> To get this excercise started, first you will need to create a resource group and two Virtual Machines on Azure, a Windows 10 vm and an Ubuntu linux vm. Ensure that the vnet and resource group are the same for both with at least 2 vcpus each. Install windows app (microsoft remote desktop) and connect to the windows vm, now install Wireshark using windows-vm to start a packet capture. Now we will filter for ICMP Traffic, a protocal used by used by ping to the test connectivity between two devices. 
 </p>
 <br />
 <p>
