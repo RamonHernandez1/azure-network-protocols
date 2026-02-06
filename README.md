@@ -63,7 +63,8 @@ Observe the ICMP traffic start working again in Wireshark and on the command lin
 <p>2. From the Windows 10 VM, establish an SSH connection to the Ubuntu VM using its private IP address.
 <p>Type commands (e.g., username, password) into the SSH session and observe the SSH traffic in Wireshark.<p><img width="1411" height="820" alt="Screenshot 2026-02-05 at 7 10 21 PM" src="https://github.com/user-attachments/assets/abac163b-5b4b-4e8f-8382-ebe3a1188f5f" />
 
-<p>Exit the SSH session by typing exit and pressing Enter.<img width="1404" height="838" alt="Screenshot 2026-02-05 at 7 26 23 PM" src="https://github.com/user-attachments/assets/c81028d5-dd50-4fac-9be7-9d52eb367fa5" />
+<p>Exit the SSH session by typing exit and pressing Enter.<img width="1407" height="840" alt="Screenshot 2026-02-05 at 7 31 17 PM" src="https://github.com/user-attachments/assets/5cd03fc9-3e2b-4f79-ae38-6352f9f849e7" />
+
 </p><h2>Part4: Observe DHCP Traffic</h2><p>1. In Wireshark, apply a filter to capture DHCP traffic.
 <p>2. From the Windows 10 VM, attempt to request a new IP address using the command ipconfig /renew.
 Observe the DHCP traffic in Wireshark as the VM communicates with the DHCP server to renew its IP address.
