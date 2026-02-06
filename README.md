@@ -67,7 +67,10 @@ Observe the ICMP traffic start working again in Wireshark and on the command lin
 
 </p><h2>Part4: Observe DHCP Traffic</h2><p>1. In Wireshark, apply a filter to capture DHCP traffic.
 <p>2. From the Windows 10 VM, attempt to request a new IP address using the command ipconfig /renew.
-Observe the DHCP traffic in Wireshark as the VM communicates with the DHCP server to renew its IP address.<p><img width="1413" height="838" alt="Screenshot 2026-02-05 at 7 40 13 PM" src="https://github.com/user-attachments/assets/76a2dd95-94a6-43c6-a972-30f654af24ef" />
+Observe the DHCP traffic in Wireshark as the VM communicates with the DHCP server to renew its IP address.<p><img width="1413" height="838" alt="Screenshot 2026-02-05 at 7 40 13 PM" src="https://github.com/user-attachments/assets/76a2dd95-94a6-43c6-a972-30f654af24ef" /> <p></p><h2>Part5: Observe DNS Traffic</h2><p><p>1. In Wireshark, apply a filter to capture DNS traffic.
+<p>2. From the Windows 10 VM, use the nslookup command to resolve the IP addresses of websites like google.com and disney.com.
+<p>Observe the DNS query and response traffic in Wireshark.<p><img width="1394" height="776" alt="Screenshot 2026-02-05 at 7 57 06 PM" src="https://github.com/user-attachments/assets/ef5df1aa-52c7-4659-8076-324ed1b37722" />
+
 
 
 
