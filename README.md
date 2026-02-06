@@ -63,7 +63,8 @@ Observe the ICMP traffic start working again in Wireshark and on the command lin
 <p>2. From the Windows 10 VM, establish an SSH connection to the Ubuntu VM using its private IP address.
 <p>Type commands (e.g., username, password) into the SSH session and observe the SSH traffic in Wireshark.<p><img width="1411" height="820" alt="Screenshot 2026-02-05 at 7 10 21 PM" src="https://github.com/user-attachments/assets/abac163b-5b4b-4e8f-8382-ebe3a1188f5f" />
 
-<p>Exit the SSH session by typing exit and pressing Enter.</p><h2>Part4: Observe DHCP Traffic</h2>
+<p>Exit the SSH session by typing exit and pressing Enter.<img width="1404" height="838" alt="Screenshot 2026-02-05 at 7 26 23 PM" src="https://github.com/user-attachments/assets/c81028d5-dd50-4fac-9be7-9d52eb367fa5" />
+</p><h2>Part4: Observe DHCP Traffic</h2>
 
 <img src="https://i.imgur.com/IIUShxp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
