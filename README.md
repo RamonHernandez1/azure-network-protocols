@@ -50,7 +50,9 @@ Observe the public ping traffic in Wireshark.<p><img width="1386" height="817" a
 <p>6. Initiate a continuous ping from the Windows 10 VM to the Ubuntu VM.<p><img width="1369" height="838" alt="Screenshot 2026-02-05 at 5 57 05 PM" src="https://github.com/user-attachments/assets/7168c632-9b1a-4dc5-8b95-560f30aa6d3a" />
 
 <p>7. In the Azure portal, access the Network Security Group (NSG) assigned to the Ubuntu VM and disable inbound ICMP traffic.
-Observe how the ICMP traffic stops in Wireshark and the command line due to the blocked traffic.
+Observe how the ICMP traffic stops in Wireshark and the command line due to the blocked traffic.<p><img width="1340" height="805" alt="Screenshot 2026-02-05 at 6 05 59 PM" src="https://github.com/user-attachments/assets/a63df506-de89-434b-9772-9033a3835295" /><p><img width="1378" height="811" alt="Screenshot 2026-02-05 at 6 07 10 PM" src="https://github.com/user-attachments/assets/4af1c7c4-6a3f-41fe-9810-2f13d646fdb0" />
+
+
 <p>8. Re-enable ICMP traffic in the NSG for the Ubuntu VM.
 Observe the ICMP traffic start working again in Wireshark and on the command line.
 <p>9. Stop the continuous ping activity from the Windows 10 VM.
