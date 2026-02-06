@@ -50,11 +50,11 @@ Observe the public ping traffic in Wireshark.<p><img width="1386" height="817" a
 <p>6. Initiate a continuous ping from the Windows 10 VM to the Ubuntu VM.<p><img width="1369" height="838" alt="Screenshot 2026-02-05 at 5 57 05 PM" src="https://github.com/user-attachments/assets/7168c632-9b1a-4dc5-8b95-560f30aa6d3a" />
 
 <p>7. In the Azure portal, access the Network Security Group (NSG) assigned to the Ubuntu VM and disable inbound ICMP traffic.
-Observe how the ICMP traffic stops in Wireshark and the command line due to the blocked traffic.<p><img width="1340" height="805" alt="Screenshot 2026-02-05 at 6 05 59 PM" src="https://github.com/user-attachments/assets/a63df506-de89-434b-9772-9033a3835295" /><p><img width="1378" height="811" alt="Screenshot 2026-02-05 at 6 07 10 PM" src="https://github.com/user-attachments/assets/4af1c7c4-6a3f-41fe-9810-2f13d646fdb0" />
+<p>Observe how the ICMP traffic stops in Wireshark and the command line due to the blocked traffic.<p><img width="1340" height="805" alt="Screenshot 2026-02-05 at 6 05 59 PM" src="https://github.com/user-attachments/assets/a63df506-de89-434b-9772-9033a3835295" /><p><img width="1378" height="811" alt="Screenshot 2026-02-05 at 6 07 10 PM" src="https://github.com/user-attachments/assets/4af1c7c4-6a3f-41fe-9810-2f13d646fdb0" />
 
 
 <p>8. Re-enable ICMP traffic in the NSG for the Ubuntu VM.
-Observe the ICMP traffic start working again in Wireshark and on the command line.<p><img width="1341" height="749" alt="Screenshot 2026-02-05 at 6 12 41 PM" src="https://github.com/user-attachments/assets/1db95a73-6af0-4c5c-9a4e-ab08bb2a681a" /><p><img width="1364" height="841" alt="Screenshot 2026-02-05 at 6 27 25 PM" src="https://github.com/user-attachments/assets/14919a00-0ce4-4c4d-9372-68e12ab46c58" />
+<p>Observe the ICMP traffic start working again in Wireshark and on the command line.<p><img width="1341" height="749" alt="Screenshot 2026-02-05 at 6 12 41 PM" src="https://github.com/user-attachments/assets/1db95a73-6af0-4c5c-9a4e-ab08bb2a681a" /><p><img width="1364" height="841" alt="Screenshot 2026-02-05 at 6 27 25 PM" src="https://github.com/user-attachments/assets/14919a00-0ce4-4c4d-9372-68e12ab46c58" />
 
 
 <p>9. Stop the continuous ping activity from the Windows 10 VM.
@@ -67,56 +67,16 @@ Observe the ICMP traffic start working again in Wireshark and on the command lin
 
 </p><h2>Part4: Observe DHCP Traffic</h2><p>1. In Wireshark, apply a filter to capture DHCP traffic.
 <p>2. From the Windows 10 VM, attempt to request a new IP address using the command ipconfig /renew.
-Observe the DHCP traffic in Wireshark as the VM communicates with the DHCP server to renew its IP address.<p><img width="1413" height="838" alt="Screenshot 2026-02-05 at 7 40 13 PM" src="https://github.com/user-attachments/assets/76a2dd95-94a6-43c6-a972-30f654af24ef" /> <p></p><h2>Part5: Observe DNS Traffic</h2><p><p>1. In Wireshark, apply a filter to capture DNS traffic.
+<p>Observe the DHCP traffic in Wireshark as the VM communicates with the DHCP server to renew its IP address.<p><img width="1413" height="838" alt="Screenshot 2026-02-05 at 7 40 13 PM" src="https://github.com/user-attachments/assets/76a2dd95-94a6-43c6-a972-30f654af24ef" /> <p></p><h2>Part5: Observe DNS Traffic</h2><p><p>1. In Wireshark, apply a filter to capture DNS traffic.
 <p>2. From the Windows 10 VM, use the nslookup command to resolve the IP addresses of websites like google.com and disney.com.
 <p>Observe the DNS query and response traffic in Wireshark.<p><img width="1394" height="776" alt="Screenshot 2026-02-05 at 7 57 06 PM" src="https://github.com/user-attachments/assets/ef5df1aa-52c7-4659-8076-324ed1b37722" /><p></p><h2>Part6: Observe RDP Traffic</h2> <p><p>1. In Wireshark, apply a filter to capture RDP traffic (using the filter tcp.port == 3389).
 <p>2.Observe the continuous stream of RDP traffic between your local machine and the Windows 10 VM.
-<p>-This constant stream is because RDP continuously transmits data to keep the live remote session active.
-<p>-The protocol constantly sends data, even when there is no specific user activity, to maintain the connection and update the screen in real time.<p><img width="1392" height="775" alt="Screenshot 2026-02-05 at 8 09 30 PM" src="https://github.com/user-attachments/assets/e682809d-2f5b-46a8-b8ae-381af8ab23a1" />  <p><p><h2>Conclusion</h2><p>In this lab, we explored different types of network traffic between two Azure Virtual Machines, using Wireshark to analyze protocols such as ICMP, SSH, DHCP, DNS, and RDP. We also experimented with Network Security Groups to control the flow of ICMP traffic and observed how security settings can affect network behavior. By completing these exercises, we gained insight into how network traffic flows between virtual machines in Azure and how network security controls can be implemented to manage this traffic effectively.
+<p>This constant stream is because RDP continuously transmits data to keep the live remote session active.
+<p>The protocol constantly sends data, even when there is no specific user activity, to maintain the connection and update the screen in real time.<p><img width="1392" height="775" alt="Screenshot 2026-02-05 at 8 09 30 PM" src="https://github.com/user-attachments/assets/e682809d-2f5b-46a8-b8ae-381af8ab23a1" />  <p><p><h2>Conclusion</h2><p>In this lab, we explored different types of network traffic between two Azure Virtual Machines, using Wireshark to analyze protocols such as ICMP, SSH, DHCP, DNS, and RDP. We also experimented with Network Security Groups to control the flow of ICMP traffic and observed how security settings can affect network behavior. By completing these exercises, we gained insight into how network traffic flows between virtual machines in Azure and how network security controls can be implemented to manage this traffic effectively.
 
 
 
 
 
-<img src="https://i.imgur.com/IIUShxp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-We can inspect each individual packet and see the actual data that is being sent in each ping. the picture below demonstrates just that. 
-</p>
-<br />
-<p>
-<img src="https://i.imgur.com/GLxSIG3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-In the next portion of the lab we will perpetually ping the Linux machine with the command ping -t. This will continually ping the machine until we decide to stop it, while the Windows machine is pinging the Linux machine we will go to the Linux machine and block inbound ICMP traffic on it's firewall. Once we do that we will stop recieving echo replys from the Linux machine. We will block ICMP by creating a new Network Security Group on the Linux machine that will be set to block ICMP. We can allow the traffic by allowing ICMP on the Linux Network Security Groups page on Azure. 
-</p>
-<br />
-<img src="https://i.imgur.com/5vXO75R.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<img src="https://i.imgur.com/Asl80tN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<p>
-Next we will use our Windows machine to SSH to the Linux machine. SSH has no GUI it just gives the user access to the machines CLI. We will set the wireshark filter to capture SSH packets only. When we ssh into the Linux machine with the command prompt "ssh labuser@10.0.0.5" we can see that wireshark starts to immediately capture SSH packets.
-</p>
-<br />
-<img src="https://i.imgur.com/zteR41r.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Now we will use wireshark to filter for DHCP. DHCP is the Dynamic Host Configuration Protocol this works on ports 67/68. It is used to assign IP addresses to machines. We will request a new ip address with the command "ipconfig /renew". Once we enter the command wireshark will capture DHCP traffic.
-</p>
-<br />
-<img src="https://i.imgur.com/vU8fpQf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Time to filter DNS traffic. We will set wireshark to filter DNS traffic. We will initiate DNS traffic by typing in the command "nslookup www.google.com" this command essentially asks our DNS server what is google's IP address.
-</p>
-<br />
-<img src="https://i.imgur.com/VMcwmsO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lastly we will filter for RDP traffic. When we enter tcp.port==3389 traffic is spammed non stop because we are using Remote Desktop Protocol to connect to our Virtual Machine. 
-</p>
-<br />
-<img src="https://i.imgur.com/VxXGv6X.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
+
 <br />
