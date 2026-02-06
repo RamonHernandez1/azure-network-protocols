@@ -35,14 +35,20 @@ In this tutorial, we explore network traffic between Azure Virtual Machines usin
 
 <p> 
 </p><h2>Part2: Observe ICMP Traffic</h2>
-<p> 1. Connect to the Windows 10 VM using Remote Desktop.
-<p> 2. Install Wireshark within the Windows 10 VM.
+<p> 1. Connect to the Windows 10 VM using Remote Desktop.<p><img width="1161" height="708" alt="Screenshot 2026-02-05 at 4 30 02 PM" src="https://github.com/user-attachments/assets/76e3a95b-7078-4c51-9d40-e13f0db0ae8b" />
+
+<p> 2. Install Wireshark within the Windows 10 VM.<p><img width="698" height="457" alt="Screenshot 2026-02-05 at 5 45 05 PM" src="https://github.com/user-attachments/assets/0cca6272-f6de-402d-b9d0-130e0df7a92f" />
+
+
 <p>3. Open Wireshark and apply a filter to capture only ICMP traffic (used for ping commands).
 <p>4. Retrieve the private IP address of the Ubuntu VM and attempt to ping it from the Windows 10 VM.
-Observe the ping requests and replies in Wireshark.
+Observe the ping requests and replies in Wireshark.<p><img width="1386" height="811" alt="Screenshot 2026-02-05 at 5 50 55 PM" src="https://github.com/user-attachments/assets/ef7b3b99-b15f-4516-8511-3f8790051eb0" />
+
 <p>5. From the Windows 10 VM, open Command Prompt or PowerShell and ping a public website (such as www.google.com).
-Observe the public ping traffic in Wireshark.
-<p>6. Initiate a continuous ping from the Windows 10 VM to the Ubuntu VM.
+Observe the public ping traffic in Wireshark.<p><img width="1386" height="817" alt="Screenshot 2026-02-05 at 5 53 40 PM" src="https://github.com/user-attachments/assets/f8869616-56e4-4027-ba89-5aea873e15ea" />
+
+<p>6. Initiate a continuous ping from the Windows 10 VM to the Ubuntu VM.<p><img width="1369" height="838" alt="Screenshot 2026-02-05 at 5 57 05 PM" src="https://github.com/user-attachments/assets/7168c632-9b1a-4dc5-8b95-560f30aa6d3a" />
+
 <p>7. In the Azure portal, access the Network Security Group (NSG) assigned to the Ubuntu VM and disable inbound ICMP traffic.
 Observe how the ICMP traffic stops in Wireshark and the command line due to the blocked traffic.
 <p>8. Re-enable ICMP traffic in the NSG for the Ubuntu VM.
