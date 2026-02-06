@@ -12,7 +12,7 @@ In this tutorial, we explore network traffic between Azure Virtual Machines usin
 - Microsoft Azure (Virtual Machines)
 - Remote Desktop
 - Various Command-Line Tools
-- Various Network Protocols (SSH, RDP, DNS, HTTP/S, ICMP)
+- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -20,13 +20,22 @@ In this tutorial, we explore network traffic between Azure Virtual Machines usin
 - Windows 10 
 - Ubuntu Server 
 
-<h2>Actions and Observations</h2>
+<h2>Part1: Create Resources</h2>
 
-<p>
+<p> 1. Create a Resource Group in Azure.
+  <p> https://portal.azure.com/
+<p> 2. Create a Windows 10 Virtual Machine (VM).<p>During the VM setup, select the Resource Group created earlier.
+  <p>Allow the creation of a new Virtual Network (Vnet) and Subnet for the VM.<img width="1382" height="811" alt="Screenshot 2026-02-05 at 4 28 55 PM" src="https://github.com/user-attachments/assets/22fa9dc6-c832-4761-a324-314267f92f5f" />
+
+<p>3. Create a Linux (Ubuntu) Virtual Machine (VM). <p>Select the previously created Resource Group and Vnet for this VM.
+<p>4. Observe the topology and details of your Virtual Network using Azure Network Watcher.
+<img width="1433" height="809" alt="image" src="https://github.com/user-attachments/assets/b3be0e7e-36d1-4d09-8dcc-aa20c898252d" />
+
+
 </p>
-<p> To get this excercise started, first you will need to create a resource group and two Virtual Machines on Azure, A Windows 10 vm and an Ubuntu linux vm https://portal.azure.com/. Ensure that both vm's have the same virtual Network and Resource Group both with at least 2 vcpus each. Install windows app and log in using the windows vm first. Now we need to install Wireshark https://www.wireshark.org, once installed well start a packet capture. Now we will filter for ICMP Traffic by typing it into the search bar. ICMP is a network layer protocol that relays messages concerning network connection issues, a protocal used by  by ping a command which we'll be using here to the test connectivity between two devices. 
+<p> 
 </p>
-<br />kkkkkk
+<br />kk
 <p>
 <img src="https://i.imgur.com/IIUShxp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
