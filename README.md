@@ -72,7 +72,8 @@ Observe the DHCP traffic in Wireshark as the VM communicates with the DHCP serve
 <p>Observe the DNS query and response traffic in Wireshark.<p><img width="1394" height="776" alt="Screenshot 2026-02-05 at 7 57 06 PM" src="https://github.com/user-attachments/assets/ef5df1aa-52c7-4659-8076-324ed1b37722" /><p></p><h2>Part6: Observe RDP Traffic</h2> <p><p>1. In Wireshark, apply a filter to capture RDP traffic (using the filter tcp.port == 3389).
 <p>2.Observe the continuous stream of RDP traffic between your local machine and the Windows 10 VM.
 <p>-This constant stream is because RDP continuously transmits data to keep the live remote session active.
-<p>-The protocol constantly sends data, even when there is no specific user activity, to maintain the connection and update the screen in real time.
+<p>-The protocol constantly sends data, even when there is no specific user activity, to maintain the connection and update the screen in real time.<p><img width="1392" height="775" alt="Screenshot 2026-02-05 at 8 09 30 PM" src="https://github.com/user-attachments/assets/e682809d-2f5b-46a8-b8ae-381af8ab23a1" />
+
 
 
 
