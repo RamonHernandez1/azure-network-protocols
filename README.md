@@ -32,11 +32,24 @@ In this tutorial, we explore network traffic between Azure Virtual Machines usin
 <img width="1433" height="809" alt="image" src="https://github.com/user-attachments/assets/b3be0e7e-36d1-4d09-8dcc-aa20c898252d" />
 
 
-</p>
+
 <p> 
-</p>
-<br />kk
-<p>
+</p><h2>Part2: Observe ICMP Traffic</h2>
+<p> 1. Connect to the Windows 10 VM using Remote Desktop.
+<p> 2. Install Wireshark within the Windows 10 VM.
+<p>3. Open Wireshark and apply a filter to capture only ICMP traffic (used for ping commands).
+<p>4. Retrieve the private IP address of the Ubuntu VM and attempt to ping it from the Windows 10 VM.
+Observe the ping requests and replies in Wireshark.
+<p>5. From the Windows 10 VM, open Command Prompt or PowerShell and ping a public website (such as www.google.com).
+Observe the public ping traffic in Wireshark.
+<p>6. Initiate a continuous ping from the Windows 10 VM to the Ubuntu VM.
+<p>7. In the Azure portal, access the Network Security Group (NSG) assigned to the Ubuntu VM and disable inbound ICMP traffic.
+Observe how the ICMP traffic stops in Wireshark and the command line due to the blocked traffic.
+<p>8. Re-enable ICMP traffic in the NSG for the Ubuntu VM.
+Observe the ICMP traffic start working again in Wireshark and on the command line.
+<p>9. Stop the continuous ping activity from the Windows 10 VM.
+
+  <p>
 <img src="https://i.imgur.com/IIUShxp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
