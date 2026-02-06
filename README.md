@@ -13,7 +13,7 @@ In this tutorial we will be doing some configuration activities with network sec
 - Microsoft Azure (Virtual Machines)
 - Remote Desktop
 - Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
+- Various Network Protocols (SSH, RDP, DNS, HTTP/S, ICMP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -25,9 +25,9 @@ In this tutorial we will be doing some configuration activities with network sec
 
 <p>
 </p>
-<p> To get this excercise started, first you will need to create a resource group and two Virtual Machines on Azure, a Windows 10 vm and an Ubuntu linux vm. Ensure that the vnet and resource group are the same for both with at least 2 vcpus each. Install windows app (microsoft remote desktop) and connect to the windows vm, now install Wireshark using windows-vm to start a packet capture. Now we will filter for ICMP Traffic, a protocal used by used by ping to the test connectivity between two devices. 
+<p> To get this excercise started, first you will need to create a resource group and two Virtual Machines on Azure https://portal.azure.com/, A Windows 10 vm and an Ubuntu linux vm. Ensure that both vm's have the same virtual Network and Resource Group both with at least 2 vcpus each. Install windows app (microsoft remote desktop) and connect to the windows vm first. Now we need to install Wireshark https://www.wireshark.org once installed well go to us the windows vm to start a packet capture. Now we will filter for ICMP Traffic by typing it into the search bar. ICMP is a network layer protocol that relays messages concerning network connection issues, a protocal used by used by ping to the test connectivity between two devices. 
 </p>
-<br />
+<br />kkkkkk
 <p>
 <img src="https://i.imgur.com/IIUShxp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
