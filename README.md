@@ -67,7 +67,8 @@ Observe the ICMP traffic start working again in Wireshark and on the command lin
 
 </p><h2>Part4: Observe DHCP Traffic</h2><p>1. In Wireshark, apply a filter to capture DHCP traffic.
 <p>2. From the Windows 10 VM, attempt to request a new IP address using the command ipconfig /renew.
-Observe the DHCP traffic in Wireshark as the VM communicates with the DHCP server to renew its IP address.
+Observe the DHCP traffic in Wireshark as the VM communicates with the DHCP server to renew its IP address.<p><img width="1413" height="838" alt="Screenshot 2026-02-05 at 7 40 13 PM" src="https://github.com/user-attachments/assets/76a2dd95-94a6-43c6-a972-30f654af24ef" />
+
 
 
 <img src="https://i.imgur.com/IIUShxp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
