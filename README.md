@@ -54,7 +54,9 @@ Observe how the ICMP traffic stops in Wireshark and the command line due to the 
 
 
 <p>8. Re-enable ICMP traffic in the NSG for the Ubuntu VM.
-Observe the ICMP traffic start working again in Wireshark and on the command line.
+Observe the ICMP traffic start working again in Wireshark and on the command line.<p><img width="1341" height="749" alt="Screenshot 2026-02-05 at 6 12 41 PM" src="https://github.com/user-attachments/assets/1db95a73-6af0-4c5c-9a4e-ab08bb2a681a" /><p><img width="1364" height="841" alt="Screenshot 2026-02-05 at 6 27 25 PM" src="https://github.com/user-attachments/assets/14919a00-0ce4-4c4d-9372-68e12ab46c58" />
+
+
 <p>9. Stop the continuous ping activity from the Windows 10 VM.
 
   <p>
