@@ -37,7 +37,7 @@ In this tutorial, we explore network traffic between Azure Virtual Machines usin
 </p><h2>Part2: Observe ICMP Traffic</h2>
 <p> 1. Connect to the Windows 10 VM using Remote Desktop.<p><img width="1161" height="708" alt="Screenshot 2026-02-05 at 4 30 02 PM" src="https://github.com/user-attachments/assets/76e3a95b-7078-4c51-9d40-e13f0db0ae8b" />
 
-<p> 2. Install Wireshark within the Windows 10 VM.<p><img width="698" height="457" alt="Screenshot 2026-02-05 at 5 45 05 PM" src="https://github.com/user-attachments/assets/0cca6272-f6de-402d-b9d0-130e0df7a92f" />
+<p> 2. Install Wireshark within the Windows 10 VM.https://www.wireshark.org<p><img width="698" height="457" alt="Screenshot 2026-02-05 at 5 45 05 PM" src="https://github.com/user-attachments/assets/0cca6272-f6de-402d-b9d0-130e0df7a92f" />
 
 
 <p>3. Open Wireshark and apply a filter to capture only ICMP traffic (used for ping commands).
